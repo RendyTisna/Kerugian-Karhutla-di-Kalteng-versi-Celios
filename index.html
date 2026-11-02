@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Karhutla Kalimantan Tengah 2026</title>
+<style>
+:root{--bg:#ECEEEF;--card:#fff;--ink:#23262A;--mute:#6B7479;--line:#D9DDDF;--ember:#E4572E;--peat:#5B3A29;--ash:#B9C0C4;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#15181A;--card:#1F2326;--ink:#ECEEEF;--mute:#9AA3A8;--line:#32383C;--ember:#FF7448;--peat:#C79A80;--ash:#4A5358}}
+:root[data-theme="dark"]{--bg:#15181A;--card:#1F2326;--ink:#ECEEEF;--mute:#9AA3A8;--line:#32383C;--ember:#FF7448;--peat:#C79A80;--ash:#4A5358}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Avenir Next","Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.45}
+html,body{height:100%}
+main{max-width:480px;margin:0 auto;padding:12px 14px 10px;height:100%;display:flex;flex-direction:column}
+#deck{position:relative;flex:1;min-height:0;display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none}
+#deck::-webkit-scrollbar{display:none}
+.slide{flex:0 0 100%;scroll-snap-align:center;overflow-y:auto;display:flex;flex-direction:column;justify-content:center}
+.slide .card{margin-top:0;margin-bottom:12px}
+#nav{display:flex;align-items:center;justify-content:space-between;padding-top:8px}
+#nav .chip{width:44px;font-size:18px;line-height:1;padding:7px 0}
+#dots{display:flex;gap:8px}
+#dots button{width:9px;height:9px;padding:0;border-radius:50%;border:0;background:var(--ash);cursor:pointer}
+#dots button[aria-current="true"]{background:var(--ember);width:22px;border-radius:5px}
+h1{font-size:25px;line-height:1.15;margin:4px 0 6px;font-weight:800;letter-spacing:-.4px}
+h2{font-size:16px;margin:0 0 4px;font-weight:700}
+p.sub{margin:0;color:var(--mute);font-size:13px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;margin-top:12px}
+.hero{display:flex;flex-direction:column;align-items:center;text-align:center}
+.ring{position:relative;width:210px;height:210px;margin:10px 0 6px;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.ring svg{transform:rotate(-90deg);width:100%;height:100%}
+.ring .c{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.big{font-size:40px;font-weight:800;color:var(--ember);letter-spacing:-1px;line-height:1}
+.lbl{font-size:12px;color:var(--mute);max-width:120px;margin-top:4px}
+.chips{display:flex;gap:6px;flex-wrap:wrap;margin:10px 0}
+.chip{border:1px solid var(--line);background:transparent;color:var(--ink);border-radius:999px;padding:7px 12px;font:inherit;font-size:13px;cursor:pointer;min-height:36px}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.chip:focus-visible,.bar:focus-visible,.ring:focus-visible{outline:2px solid var(--ember);outline-offset:2px}
+.bar{display:block;width:100%;text-align:left;background:none;border:0;padding:6px 0;color:inherit;font:inherit;cursor:pointer}
+.bar .t{display:flex;justify-content:space-between;font-size:13px;margin-bottom:3px}
+.bar .t b{font-variant-numeric:tabular-nums}
+.track{height:14px;background:var(--line);border-radius:7px;overflow:hidden}
+.fill{height:100%;background:var(--ash);border-radius:7px;transition:width .5s}
+.bar.on .fill{background:var(--ember)}
+.bar.on .t{font-weight:700}
+.note{font-size:13px;color:var(--mute);margin:8px 0 0;min-height:38px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px}
+.stat{border:1px solid var(--line);border-radius:10px;padding:10px}
+.stat b{display:block;font-size:20px;font-variant-numeric:tabular-nums}
+.stat span{font-size:12px;color:var(--mute)}
+.stack{display:flex;height:22px;border-radius:11px;overflow:hidden;margin-top:6px}
+.stack div{transition:flex .5s;color:#fff;font-size:11px;display:flex;align-items:center;justify-content:center}
+.leg{display:flex;justify-content:space-between;font-size:12px;color:var(--mute);margin-top:5px}
+.dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:4px}
+.tax{display:flex;gap:14px;align-items:center}
+.tax svg{width:92px;height:92px;flex:none;transform:rotate(-90deg)}
+footer{font-size:11.5px;color:var(--mute);margin:14px 2px 0}
+</style>
+</head>
+<body>
+<main>
+<div id="deck">
+<div class="slide">
+  <p class="sub">CELIOS, November 2026 · data per 20 Oktober 2026</p>
+  <h1>Karhutla 2026 di Kalimantan Tengah</h1>
+  <p class="sub">Estimasi kerugian ekonomi dan biaya kesehatan. Ketuk grafik untuk detail, geser untuk slide berikutnya.</p>
+
+  <section class="card hero" aria-label="Kerugian ekonomi">
+    <h2>Kerugian ekonomi</h2>
+    <div class="ring" id="ring" role="button" tabindex="0" aria-label="Ketuk untuk berganti tampilan">
+      <svg viewBox="0 0 100 100" aria-hidden="true">
+        <circle cx="50" cy="50" r="40" fill="none" stroke="var(--line)" stroke-width="11"/>
+        <circle id="arc" cx="50" cy="50" r="40" fill="none" stroke="var(--ember)" stroke-width="11" stroke-linecap="round" stroke-dasharray="0 251.3" style="transition:stroke-dasharray .9s"/>
+      </svg>
+      <div class="c"><div class="big" id="rb">28,26%</div><div class="lbl" id="rl">dari PDRB Kalteng hilang</div></div>
+    </div>
+    <p class="note" id="rn" style="text-align:center">Ketuk lingkaran: kerugian Rp32,89 triliun, mencakup aset dan aktivitas ekonomi yang terhenti.</p>
+  </section>
+
+</div>
+<div class="slide">
+  <section class="card" aria-label="Peringkat provinsi">
+    <h2>Kalteng dibanding provinsi lain</h2>
+    <div class="chips" id="tabs">
+      <button class="chip" data-k="rugi" aria-pressed="true">Kerugian</button>
+      <button class="chip" data-k="pdrb" aria-pressed="false">% PDRB</button>
+      <button class="chip" data-k="luas" aria-pressed="false">Luas terbakar</button>
+    </div>
+    <div id="bars"></div>
+    <p class="note" id="bn"></p>
+  </section>
+
+</div>
+<div class="slide">
+  <section class="card" aria-label="Pajak daerah">
+    <h2>Penerimaan pajak daerah</h2>
+    <div class="tax">
+      <svg viewBox="0 0 100 100" aria-hidden="true">
+        <circle cx="50" cy="50" r="40" fill="none" stroke="var(--line)" stroke-width="14"/>
+        <circle cx="50" cy="50" r="40" fill="none" stroke="var(--peat)" stroke-width="14" stroke-dasharray="25.5 251.3"/>
+      </svg>
+      <div><b style="font-size:22px">Rp136,7 miliar</b><br><span class="sub">potensi pajak bersih hilang, 10,14% dari penerimaan awal. Perlambatan ekonomi daerah diproyeksi hingga dua tahun.</span></div>
+    </div>
+  </section>
+
+</div>
+<div class="slide">
+  <section class="card" aria-label="Biaya kesehatan">
+    <h2>Biaya kesehatan (ISPA)</h2>
+    <div class="chips" id="htabs">
+      <button class="chip" data-k="dx" aria-pressed="true">Terdiagnosis</button>
+      <button class="chip" data-k="sx" aria-pressed="false">Diagnosis + gejala</button>
+    </div>
+    <div class="grid">
+      <div class="stat"><b id="hp">33.268</b><span>orang berpotensi ISPA</span></div>
+      <div class="stat"><b id="hc">Rp0,18 T</b><span>total biaya</span></div>
+      <div class="stat"><b id="h0">0,7%</b><span>prevalensi 2023</span></div>
+      <div class="stat"><b id="h1" style="color:var(--ember)">1,25%</b><span>prevalensi 2026 (potensi)</span></div>
+    </div>
+    <div class="stack" aria-hidden="true"><div id="sd" style="background:var(--peat)"></div><div id="si" style="background:var(--ember)"></div></div>
+    <div class="leg"><span><i class="dot" style="background:var(--peat)"></i>Langsung <b id="ld"></b></span><span><i class="dot" style="background:var(--ember)"></i>Tidak langsung <b id="li"></b></span></div>
+    <p class="note">Langsung: rawat inap, rawat jalan, obat. Tidak langsung: pendapatan pasien dan pendamping yang hilang. Asumsi kenaikan prevalensi 78% (Kemenkes).</p>
+  </section>
+
+  <footer>Semua angka adalah estimasi model CELIOS, bukan realisasi kerugian. Sumber: “Membakar Hutan, Hanguskan Ekonomi” (CELIOS, 2026); luas terbakar dari Nusantara Atlas; data udara Kalimantan dari CREA.</footer>
+</div>
+</div>
+<nav id="nav"><button class="chip" id="pv" aria-label="Slide sebelumnya">‹</button><div id="dots"></div><button class="chip" id="nx" aria-label="Slide berikutnya">›</button></nav>
+</main>
+<script>
+var $=function(i){return document.getElementById(i)};
+var C=251.3;
+// Hero ring (2 views)
+var rv=0,views=[
+ {p:28.26,b:"28,26%",l:"dari PDRB Kalteng hilang",n:"Kerugian Rp32,89 triliun, mencakup aset dan aktivitas ekonomi yang terhenti."},
+ {p:100,b:"Rp32,89 T",l:"estimasi kerugian ekonomi",n:"Ketiga terbesar nasional, setelah Papua (Rp59,43 T) dan Kalimantan Barat (Rp41,91 T)."}
+];
+function ring(){var v=views[rv];$("arc").setAttribute("stroke-dasharray",(v.p/100*C)+" "+C);$("rb").textContent=v.b;$("rl").textContent=v.l;$("rn").textContent=v.n}
+$("ring").onclick=function(){rv=1-rv;ring()};
+$("ring").onkeydown=function(e){if(e.key==="Enter"||e.key===" "){e.preventDefault();$("ring").click()}};
+setTimeout(ring,150);
+
+// Ranking
+var D={
+ rugi:{u:" T",note:"Kerugian ekonomi (Rp triliun)",rows:[["Papua",59.43],["Kalimantan Barat",41.91],["Kalimantan Tengah",32.89],["Nusa Tenggara Timur",31.33]],
+  info:function(r){return r[0]+": Rp"+f(r[1],2)+" triliun."}},
+ pdrb:{u:"%",note:"Kerugian terhadap PDRB",rows:[["Papua",40.60],["Nusa Tenggara Timur",36.16],["Kalimantan Barat",31.97],["Kalimantan Tengah",28.26]],
+  info:function(r){return r[0]+": kerugian setara "+f(r[1],2)+"% dari PDRB."}},
+ luas:{u:" ha",note:"Luas terbakar, 5 provinsi teratas",rows:[["Papua Selatan",319119.68],["Kalimantan Barat",277127.29],["Nusa Tenggara Timur",223192.97],["Kalimantan Tengah",220329.68],["Sumatera Selatan",170775.03]],
+  info:function(r){return r[0]+": "+f(r[1],2)+" hektare terbakar."}}
+};
+function f(n,d){return n.toLocaleString("id-ID",{minimumFractionDigits:d,maximumFractionDigits:d})}
+function short(k,v){return k==="luas"?f(v/1000,0)+" rb ha":k==="pdrb"?f(v,2)+"%":"Rp"+f(v,2)+" T"}
+var cur="rugi",sel="Kalimantan Tengah";
+function draw(){
+  var d=D[cur],max=Math.max.apply(null,d.rows.map(function(r){return r[1]})),h="";
+  d.rows.forEach(function(r,i){
+    h+='<button class="bar'+(r[0]===sel?' on':'')+'" data-i="'+i+'"><div class="t"><span>'+r[0]+'</span><b>'+short(cur,r[1])+'</b></div><div class="track"><div class="fill" style="width:0" data-w="'+(r[1]/max*100)+'"></div></div></button>';
+  });
+  $("bars").innerHTML=h;
+  var sr=d.rows.filter(function(r){return r[0]===sel})[0]||d.rows[0];
+  $("bn").textContent=d.note+". "+d.info(sr);
+  requestAnimationFrame(function(){requestAnimationFrame(function(){[].forEach.call(document.querySelectorAll(".fill"),function(e){e.style.width=e.dataset.w+"%"})})});
+  [].forEach.call(document.querySelectorAll(".bar"),function(b){b.onclick=function(){sel=d.rows[+b.dataset.i][0];draw()}});
+}
+[].forEach.call(document.querySelectorAll("#tabs .chip"),function(b){b.onclick=function(){
+  cur=b.dataset.k;if(!D[cur].rows.some(function(r){return r[0]===sel}))sel="Kalimantan Tengah";
+  [].forEach.call(document.querySelectorAll("#tabs .chip"),function(x){x.setAttribute("aria-pressed",x===b)});draw()}});
+draw();
+
+// Health
+var H={
+ dx:{p:"33.268",c:"Rp0,18 T",a:"0,7%",b:"1,25%",d:0.13,i:0.05},
+ sx:{p:"793.675",c:"Rp4,26 T",a:"16,7%",b:"29,73%",d:3.18,i:1.08}
+};
+function health(k){var o=H[k];$("hp").textContent=o.p;$("hc").textContent=o.c;$("h0").textContent=o.a;$("h1").textContent=o.b;
+ $("sd").style.flex=o.d;$("si").style.flex=o.i;$("sd").textContent=Math.round(o.d/(o.d+o.i)*100)+"%";$("si").textContent=Math.round(o.i/(o.d+o.i)*100)+"%";
+ $("ld").textContent="Rp"+f(o.d,2)+" T";$("li").textContent="Rp"+f(o.i,2)+" T"}
+[].forEach.call(document.querySelectorAll("#htabs .chip"),function(b){b.onclick=function(){
+  [].forEach.call(document.querySelectorAll("#htabs .chip"),function(x){x.setAttribute("aria-pressed",x===b)});health(b.dataset.k)}});
+health("dx");
+
+// Slides
+var deck=$("deck"),sl=deck.children,dots=$("dots"),ix=0;
+for(var i=0;i<sl.length;i++){(function(i){var b=document.createElement("button");b.setAttribute("aria-label","Slide "+(i+1));b.onclick=function(){go(i)};dots.appendChild(b)})(i)}
+function go(i){i=Math.max(0,Math.min(sl.length-1,i));deck.scrollTo({left:sl[i].offsetLeft,behavior:"smooth"})}
+function mark(){ix=Math.round(deck.scrollLeft/(deck.clientWidth+12));[].forEach.call(dots.children,function(b,j){if(j===ix)b.setAttribute("aria-current","true");else b.removeAttribute("aria-current")})}
+deck.addEventListener("scroll",mark);mark();
+$("pv").onclick=function(){go(ix-1)};$("nx").onclick=function(){go(ix+1)};
+document.addEventListener("keydown",function(e){if(e.key==="ArrowRight")go(ix+1);if(e.key==="ArrowLeft")go(ix-1)});
+</script>
+</body>
+</html>
